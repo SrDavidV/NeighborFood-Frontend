@@ -1,358 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Icon -->
-        <link rel="icon" href="assets/img/icon.webp" />
-        <!-- Icons -->
-        <link rel="icon" href="assets/img/icon.webp" />
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap"
-            rel="stylesheet"
-        />
-        <!-- Styles -->
-        <link rel="stylesheet" href="../css/normalize.css" />
-        <link rel="stylesheet" href="../css/styles.css" />
-        <link rel="stylesheet" href="../css/header.css" />
-        <link rel="stylesheet" href="../css/footer.css" />
-        <link rel="stylesheet" href="../css/register.css" />
-        <title>Registrate</title>
-    </head>
-    <body>
-        <header>
-            <header class="header">
-                <div id="toggle-menu" class="toggle-menu">
-                    <i class="toggle-menu__icon fa-solid fa-bars"></i>
-                </div>
-                <div class="back">
-                    <a href="../index.html">
-                        <i class="fa-solid fa-caret-left"></i>
-                        <span class="back__text">Volver</span>
-                    </a>
-                </div>
-                <a href="../index.html" class="logo">
-                    <picture class="logo">
-                        <source
-                            media="(min-width: 768px)"
-                            srcset="../assets/img/logo/logo-nf-completo.webp"
-                        />
-                        <source srcset="../assets/img/logo/logo-nf-small.webp" />
-                        <img
-                            src="../assets/img/logo/logo-nf-small.webp"
-                            alt="Logo NeighborFood"
-                        />
-                    </picture>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon -->
+    <link rel="icon" href="assets/img/icon.webp" />
+    <!-- Icons -->
+    <link rel="icon" href="assets/img/icon.webp" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/register.css" />
+    <title>Registrate</title>
+</head>
+
+<body>
+    <header>
+        <header class="header">
+            <div id="toggle-menu" class="toggle-menu">
+                <i class="toggle-menu__icon fa-solid fa-bars"></i>
+            </div>
+            <div class="back">
+                <a href="../index.html">
+                    <i class="fa-solid fa-caret-left"></i>
+                    <span class="back__text">Volver</span>
                 </a>
-                <a href="../html/register.html" class="button button--header"
-                    >Registrate</a
-                >
-            </header>
-            <aside id="main-menu" class="main-menu">
-                <div class="main-menu__header">
-                    <a href="../index.html">
-                        <img
-                            class="main-menu__logo"
-                            src="../assets/img/logo/logo-nf-completo.webp"
-                            alt="Logo"
-                        />
-                    </a>
-                    <i
-                        id="main-menu__close"
-                        class="main-menu__close fa-regular fa-circle-xmark"
-                    ></i>
-                </div>
-                <div class="button-container">
-                    <a href="../html/login.html" class="button">Iniciar Sesión</a>
-                    <a href="" class="button">Registrate</a>
-                </div>
-                <div class="main-menu__search-container">
-                    <form class="search">
-                        <input
-                            class="search__input"
-                            type="text"
-                            required=""
-                            placeholder="¿Que estas buscando?"
-                            id="search-menu"
-                        />
-                        <i class="fa-solid fa-magnifying-glass search__icon"></i>
-                    </form>
-                </div>
-                <nav class="section-nav">
-                    <p class="section-nav__title">Secciones</p>
-                    <ul>
-                        <li class="section-nav__item">
-                            <a href="#">Cerca de tí</a>
-                        </li>
-                        <li class="section-nav__item">
-                            <a href="#">Explorar Mapa</a>
-                        </li>
-                        <li class="section-nav__item">
-                            <a href="#">Categorias</a>
-                        </li>
-                        <li class="section-nav__item">
-                            <a href="#">Promociones</a>
-                        </li>
-                        <li class="section-nav__item">
-                            <a href="#">Comidas</a>
-                        </li>
-                        <li class="section-nav__item">
-                            <a href="#">Tematicas</a>
-                        </li>
-                    </ul>
-                </nav>
-                <nav class="section-nav">
-                    <p class="section-nav__title">Otros</p>
-                    <ul>
-                        <li class="section-nav__item">
-                            <a href="">Registrate como usuario</a>
-                        </li>
-                        <li class="section-nav__item">
-                            <a href="">Registra tu restaurante</a>
-                        </li>
-                    </ul>
-                </nav>
-                <nav class="main-menu__social">
-                    <ul class="social-icons__list">
-                        <li class="social-icons__item">
-                            <a
-                                href="https://facebook.com"
-                                class="fa-brands fa-facebook"
-                                target="_blank"
-                            ></a>
-                        </li>
-                        <li class="social-icons__item">
-                            <a
-                                href="https://instagram.com"
-                                class="fa-brands fa-instagram"
-                                target="_blank"
-                            ></a>
-                        </li>
-                        <li class="social-icons__item">
-                            <a
-                                href="https://twitter.com"
-                                class="fa-brands fa-twitter"
-                                target="_blank"
-                            ></a>
-                        </li>
-                    </ul>
-                    <select name="language" id="language" class="select-language">
-                        <option value="es">Español</option>
-                        <option value="en">English</option>
-                    </select>
-                </nav>
-                <div class="main-menu__footer">
-                    <small
-                        >&copy; 2022 <b>NeighborFood</b> - Todos los derechos
-                        reservados</small
-                    >
-                </div>
-            </aside>
+            </div>
+            <a href="../index.html" class="logo">
+                <picture class="logo">
+                    <source media="(min-width: 768px)" srcset="../assets/img/logo/logo-nf-completo.webp" />
+                    <source srcset="../assets/img/logo/logo-nf-small.webp" />
+                    <img src="../assets/img/logo/logo-nf-small.webp" alt="Logo NeighborFood" />
+                </picture>
+            </a>
+            <a href="../html/register.html" class="button button--header">Registrate</a>
         </header>
-        <main class="main">
-            <div class="image__container">
-                <img
-                    class="image"
-                    src="../assets/img/register-page/image-register.webp"
-                    alt=""
-                />
+        <aside id="main-menu" class="main-menu">
+            <div class="main-menu__header">
+                <a href="../index.html">
+                    <img class="main-menu__logo" src="../assets/img/logo/logo-nf-completo.webp" alt="Logo" />
+                </a>
+                <i id="main-menu__close" class="main-menu__close fa-regular fa-circle-xmark"></i>
             </div>
-            <form class="register">
-                <h1 class="register__title">Registrate</h1>
-                <fieldset>
-                    <label for="document" class="register__subtitle"
-                        >Tipo de documento:</label
-                    >
-                    <select
-                        class="register__controls"
-                        name="documento"
-                        id="document"
-                    >
-                        <option value="0">Seleccione</option>
-                        <option value="T.I">Tarjeta de Identidad</option>
-                        <option value="C.C">Cedula de Ciudadania</option>
-                        <option value="C.E">Cedula de Extranjeria</option>
-                        <option value="PAS">Pasaporte</option>
-                    </select>
-                </fieldset>
-                <fieldset>
-                    <label for="num_document" class="register__subtitle"
-                        >Numero de documento</label
-                    >
-                    <input
-                        id="num_document"
-                        class="register__controls"
-                        type="text"
-                        placeholder="Numero De Documento"
-                        aria-label="Numero De Documento"
-                    />
-                </fieldset>
-                <fieldset>
-                    <label for="gender" class="register__subtitle"
-                        >Elige tu genero:</label
-                    >
-                    <select name="gender" id="gender" class="register__controls">
-                        <option value="0">Seleccionar</option>
-                        <option value="F">Femenino</option>
-                        <option value="M">Masculino</option>
-                        <option value="N">No especifica</option>
-                    </select>
-                </fieldset>
-                <fieldset>
-                    <label for="name" class="register__subtitle">Nombre(s)</label>
-                    <input
-                        class="register__controls"
-                        id="name"
-                        type="text"
-                        placeholder="Nombres"
-                        aria-label="Nombres"
-                    />
-                </fieldset>
-                <fieldset>
-                    <label for="surname" class="register__subtitle"
-                        >Apellido(s)</label
-                    >
-                    <input
-                        class="register__controls"
-                        id="surname"
-                        type="text"
-                        placeholder="Apellidos"
-                        aria-label="Apellidos"
-                    />
-                </fieldset>
-                <fieldset>
-                    <label for="email" class="register__subtitle"
-                        >Correo Electronico</label
-                    >
-                    <input
-                        class="register__controls"
-                        id="email"
-                        type="email"
-                        placeholder="Correo Electronico"
-                        aria-label="Correo Electronico"
-                    />
-                </fieldset>
-                <fieldset>
-                    <label for="phone" class="register__subtitle">Celular</label>
-                    <input
-                        id="phone"
-                        class="register__controls"
-                        type="number"
-                        placeholder="Telefono Celular"
-                        aria-label="Telefono Celular"
-                    />
-                </fieldset>
-                <fieldset>
-                    <label for="localidades" class="register__subtitle"
-                        >Elige tu localidad:</label
-                    >
-                    <select
-                        class="register__controls"
-                        name="localidad"
-                        id="localidades"
-                    >
-                        <option value="Select">Seleccionar</option>
-                        <option value="Usa">Usaquén</option>
-                        <option value="Cha">Chapinero</option>
-                        <option value="SanFe">Santa Fe</option>
-                        <option value="SanCris">San Cristóbal</option>
-                        <option value="Usme">Usme</option>
-                        <option value="Tunj">Tunjuelito</option>
-                        <option value="Bosa">Bosa</option>
-                        <option value="Ken">Kennedy</option>
-                        <option value="Fon">Fontibón</option>
-                        <option value="Enga">Engativá</option>
-                        <option value="Suba">Suba</option>
-                        <option value="BarUni">Barrios Unidos</option>
-                        <option value="Teu">Teusaquillo</option>
-                        <option value="LMar">Los Mártires</option>
-                        <option value="AN">Antonio Nariño</option>
-                        <option value="PA">Puente Aranda</option>
-                        <option value="LC">La Candelaria</option>
-                        <option value="RUU">Rafael Uribe Uribe</option>
-                        <option value="Cb">Ciudad Bolívar</option>
-                        <option value="Sumz">Sumapaz</option>
-                    </select>
-                </fieldset>
-                <fieldset>
-                    <label for="password" class="register__subtitle"
-                        >Ingresa su contraseña</label
-                    >
-                    <input
-                        class="register__controls"
-                        id="password"
-                        type="password"
-                        placeholder="Ingresa tu Contraseña"
-                        aria-label="Ingresa tu Contraseña"
-                    />
-                </fieldset>
-                <fieldset>
-                    <label for="confirm-password" class="register__subtitle"
-                        >Confirma tu contraseña</label
-                    >
-                    <input
-                        class="register__controls"
-                        id="confirm-password"
-                        type="password"
-                        placeholder="Confirma tu Contraseña"
-                        aria-label="Confirme Contraseña"
-                    />
-                </fieldset>
-                <fieldset class="terms-conditions">
-                    <div class="terms-conditions__text">
-                        <p>
-                            Estoy de acuerdo con los
-                            <a href="#" class="terms-conditions__link"
-                                >Terminos y Condiciones</a
-                            >
-                        </p>
-                    </div>
-                    <label class="terms-conditions__check" for="terms-yes">
-                        <input
-                            class="option"
-                            id="terms-yes"
-                            type="radio"
-                            value="YES"
-                            name="terms"
-                        />
-                        Si
-                    </label>
-                    <label class="terms-conditions__check" for="terms-no">
-                        <input
-                            class="option"
-                            id="terms-no"
-                            type="radio"
-                            value="NO"
-                            name="terms"
-                        />
-                        No
-                    </label>
-                </fieldset>
-                <a class="register__button" href="#"
-                    >Registrarse</a
-                >
-                <a href="../html/login.html" class="login__link">Ya tengo cuenta.</a>
-            </form>
-        </main>
-        <footer class="footer">
-            <div class="footer__group-two">
-                <small
-                    >&copy; 2022 <b>NeighborFood</b> - Todos los derechos
-                    reservados</small
-                >
+            <div class="button-container">
+                <a href="../html/login.html" class="button">Iniciar Sesión</a>
+                <a href="" class="button">Registrate</a>
             </div>
-        </footer>
-        <!-- Scripts -->
-        <!-- Icons -->
-        <script
-            src="https://kit.fontawesome.com/36c7cc7f6f.js"
-            crossorigin="anonymous"
-        ></script>
-        <!-- My Scripts -->
-        <script src="../js/script.js"></script>
-    </body>
+            <div class="main-menu__search-container">
+                <form class="search">
+                    <input class="search__input" type="text" required="" placeholder="¿Que estas buscando?"
+                        id="search-menu" />
+                    <i class="fa-solid fa-magnifying-glass search__icon"></i>
+                </form>
+            </div>
+            <nav class="section-nav">
+                <p class="section-nav__title">Secciones</p>
+                <ul>
+                    <li class="section-nav__item">
+                        <a href="#">Cerca de tí</a>
+                    </li>
+                    <li class="section-nav__item">
+                        <a href="#">Explorar Mapa</a>
+                    </li>
+                    <li class="section-nav__item">
+                        <a href="#">Categorias</a>
+                    </li>
+                    <li class="section-nav__item">
+                        <a href="#">Promociones</a>
+                    </li>
+                    <li class="section-nav__item">
+                        <a href="#">Comidas</a>
+                    </li>
+                    <li class="section-nav__item">
+                        <a href="#">Tematicas</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="section-nav">
+                <p class="section-nav__title">Otros</p>
+                <ul>
+                    <li class="section-nav__item">
+                        <a href="">Registrate como usuario</a>
+                    </li>
+                    <li class="section-nav__item">
+                        <a href="">Registra tu restaurante</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="main-menu__social">
+                <ul class="social-icons__list">
+                    <li class="social-icons__item">
+                        <a href="https://facebook.com" class="fa-brands fa-facebook" target="_blank"></a>
+                    </li>
+                    <li class="social-icons__item">
+                        <a href="https://instagram.com" class="fa-brands fa-instagram" target="_blank"></a>
+                    </li>
+                    <li class="social-icons__item">
+                        <a href="https://twitter.com" class="fa-brands fa-twitter" target="_blank"></a>
+                    </li>
+                </ul>
+                <select name="language" id="language" class="select-language">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                </select>
+            </nav>
+            <div class="main-menu__footer">
+                <small>&copy; 2022 <b>NeighborFood</b> - Todos los derechos
+                    reservados</small>
+            </div>
+        </aside>
+    </header>
+    <main class="main">
+        <div class="image__container">
+            <img class="image" src="../assets/img/register-page/image-register.webp" alt="" />
+        </div>
+        <form class="register" id="register">
+            <h1 class="register__title">Registrate</h1>
+            </fieldset>
+            <fieldset>
+                <label for="num_document" class="register__subtitle">Numero de documento</label>
+                <input required id="num_document" name="num_document" class="register__controls" type="text"
+                    placeholder="Numero De Documento" aria-label="Numero De Documento" />
+            </fieldset>
+            <fieldset>
+                <label for="gender" class="register__subtitle">Elige tu genero:</label>
+                <select name="gender" id="gender" class="register__controls" required>
+                    <option value="0">Seleccionar</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="No especifica">No especifica</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="name" class="register__subtitle">Nombre(s)</label>
+                <input required class="register__controls" name="nombre" id="name" type="text" placeholder="Nombres"
+                    aria-label="Nombres" />
+            </fieldset>
+            <fieldset>
+                <label for="surname" class="register__subtitle">Apellido(s)</label>
+                <input required class="register__controls" name="apellido" id="surname" type="text"
+                    placeholder="Apellidos" aria-label="Apellidos" />
+            </fieldset>
+            <fieldset>
+                <label for="email" class="register__subtitle">Correo Electronico</label>
+                <input required class="register__controls" name="email" id="email" type="text"
+                    placeholder="Correo Electronico" aria-label="Correo Electronico" />
+            </fieldset>
+            <fieldset>
+                <label for="phone" class="register__subtitle">Celular</label>
+                <input required id="phone" name="telefono" class="register__controls" type="text"
+                    placeholder="Telefono Celular" aria-label="Telefono Celular" />
+            </fieldset>
+            <fieldset>
+                <label for="localidades" class="register__subtitle">Elige tu localidad:</label>
+                <select required class="register__controls" name="localidad" id="localidades">
+                    <option value="Select">Seleccionar</option>
+                    <option value="Usa">Usaquén</option>
+                    <option value="Cha">Chapinero</option>
+                    <option value="SanFe">Santa Fe</option>
+                    <option value="SanCris">San Cristóbal</option>
+                    <option value="Usme">Usme</option>
+                    <option value="Tunj">Tunjuelito</option>
+                    <option value="Bosa">Bosa</option>
+                    <option value="Ken">Kennedy</option>
+                    <option value="Fon">Fontibón</option>
+                    <option value="Enga">Engativá</option>
+                    <option value="Suba">Suba</option>
+                    <option value="BarUni">Barrios Unidos</option>
+                    <option value="Teu">Teusaquillo</option>
+                    <option value="LMar">Los Mártires</option>
+                    <option value="AN">Antonio Nariño</option>
+                    <option value="PA">Puente Aranda</option>
+                    <option value="LC">La Candelaria</option>
+                    <option value="RUU">Rafael Uribe Uribe</option>
+                    <option value="Cb">Ciudad Bolívar</option>
+                    <option value="Sumz">Sumapaz</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="password" class="register__subtitle">Ingresa su contraseña</label>
+                <input class="register__controls" name="password" id="password" type="password"
+                    placeholder="Ingresa tu Contraseña" aria-label="Ingresa tu Contraseña" />
+            </fieldset>
+            <fieldset>
+                <label for="confirm-password" class="register__subtitle">Confirma tu contraseña</label>
+                <input class="register__controls" id="confirm-password" type="password" name="confirmacion"
+                    placeholder="Confirma tu Contraseña" aria-label="Confirme Contraseña" />
+            </fieldset>
+            <fieldset class="terms-conditions">
+                <div class="terms-conditions__text">
+                    <p>
+                        Estoy de acuerdo con los
+                        <a href="#" class="terms-conditions__link">Terminos y Condiciones</a>
+                    </p>
+                </div>
+                <label class="terms-conditions__check" for="terms-yes">
+                    <input class="option" id="terms-yes" type="radio" value="YES" name="terms" />
+                    Si
+                </label>
+                <label class="terms-conditions__check" for="terms-no">
+                    <input class="option" id="terms-no" type="radio" value="NO" name="terms" />
+                    No
+                </label>
+            </fieldset>
+            <input class="register__button" value="Registrarse" type="submit" />
+            <a href="../html/login.html" class="login__link">Ya tengo cuenta.</a>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="footer__group-two">
+            <small>&copy; 2022 <b>NeighborFood</b> - Todos los derechos
+                reservados</small>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/36c7cc7f6f.js" crossorigin="anonymous"></script>
+    <!-- My Scripts -->
+    <script src="../js/script.js"></script>
+    <script src="../js/ClienteRegistro.js"></script>
+</body>
+
 </html>

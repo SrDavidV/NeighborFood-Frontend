@@ -1,674 +1,334 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Icon -->
-        <link rel="icon" href="assets/img/icon.webp">
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap"
-            rel="stylesheet"
-        />
-        <!-- Styles -->
-        <link rel="stylesheet" href="css/normalize.css" />
-        <link rel="stylesheet" href="css/styles.css" />
-        <link rel="stylesheet" href="css/header.css" />
-        <link rel="stylesheet" href="css/index.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <title>NeighborFood</title>
-    </head>
 
-    <body>
-        <header class="header">
-            <div id="toggle-menu" class="toggle-menu">
-                <i class="toggle-menu__icon fa-solid fa-bars"></i>
-            </div>
-            <a href="#" class="logo">
-                <picture class="logo">
-                    <source
-                        media="(min-width: 768px)"
-                        srcset="assets/img/logo/logo-nf-completo.webp"
-                    />
-                    <source srcset="assets/img/logo/logo-nf-small.webp" />
-                    <img
-                        src="/assets/img/logo/logo-nf-small.webp"
-                        alt="Logo NeighborFood"
-                    />
-                </picture>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon -->
+    <link rel="icon" href="assets/img/icon.webp">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <title>NeighborFood</title>
+</head>
+
+<body>
+    <header class="header">
+        <div id="toggle-menu" class="toggle-menu">
+            <i class="toggle-menu__icon fa-solid fa-bars"></i>
+        </div>
+        <a href="#" class="logo">
+            <picture class="logo">
+                <source media="(min-width: 768px)" srcset="assets/img/logo/logo-nf-completo.webp" />
+                <source srcset="assets/img/logo/logo-nf-small.webp" />
+                <img src="/assets/img/logo/logo-nf-small.webp" alt="Logo NeighborFood" />
+            </picture>
+        </a>
+        <form class="search search--header">
+            <input class="search__input" type="text" required="" placeholder="¿Que estas buscando?" id="search" />
+            <i class="fa-solid fa-magnifying-glass search__icon"></i>
+        </form>
+        <a href="html/login.html" class="button button--header">Iniciar Sesión</a>
+    </header>
+    <aside id="main-menu" class="main-menu">
+        <div class="main-menu__header">
+            <a href="#">
+                <img class="main-menu__logo" src="assets/img/logo/logo-nf-completo.webp" alt="Logo" />
             </a>
-            <form class="search search--header">
-                <input
-                    class="search__input"
-                    type="text"
-                    required=""
-                    placeholder="¿Que estas buscando?"
-                    id="search"
-                />
+            <i id="main-menu__close" class="main-menu__close fa-regular fa-circle-xmark"></i>
+        </div>
+        <div class="button-container">
+            <a href="html/login.html" class="button">Iniciar Sesión</a>
+            <a href="html/register.html" class="button">Registrate</a>
+        </div>
+        <div class="main-menu__search-container">
+            <form class="search">
+                <input class="search__input" type="text" required="" placeholder="¿Que estas buscando?"
+                    id="search-menu" />
                 <i class="fa-solid fa-magnifying-glass search__icon"></i>
             </form>
-            <a href="html/login.html" class="button button--header">Iniciar Sesión</a>
-        </header>
-            <aside id="main-menu" class="main-menu">
-                <div class="main-menu__header">
-                    <a href="#">
-                    <img
-                        class="main-menu__logo"
-                        src="assets/img/logo/logo-nf-completo.webp"
-                        alt="Logo"
-                    />
-                </a>
-                    <i
-                        id="main-menu__close"
-                        class="main-menu__close fa-regular fa-circle-xmark"
-                    ></i>
+        </div>
+        <nav class="section-nav">
+            <p class="section-nav__title">Secciones</p>
+            <ul>
+                <li class="section-nav__item">
+                    <a href="#">Cerca de tí</a>
+                </li>
+                <li class="section-nav__item">
+                    <a href="#">Explorar Mapa</a>
+                </li>
+                <li class="section-nav__item">
+                    <a href="#">Categorias</a>
+                </li>
+                <li class="section-nav__item">
+                    <a href="#">Promociones</a>
+                </li>
+                <li class="section-nav__item">
+                    <a href="#">Comidas</a>
+                </li>
+                <li class="section-nav__item">
+                    <a href="#">Tematicas</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="section-nav">
+            <p class="section-nav__title">Otros</p>
+            <ul>
+                <li class="section-nav__item">
+                    <a href="../html/register.html">Registrate como usuario</a>
+                </li>
+                <li class="section-nav__item">
+                    <a href="../html/register.html">Registra tu restaurante</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="main-menu__social">
+            <ul class="social-icons__list">
+                <li class="social-icons__item">
+                    <a href="https://facebook.com" class="fa-brands fa-facebook" target="_blank"></a>
+                </li>
+                <li class="social-icons__item">
+                    <a href="https://instagram.com" class="fa-brands fa-instagram" target="_blank"></a>
+                </li>
+                <li class="social-icons__item">
+                    <a href="https://twitter.com" class="fa-brands fa-twitter" target="_blank"></a>
+                </li>
+            </ul>
+            <select name="language" id="language" class="select-language">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+            </select>
+        </nav>
+        <div class="main-menu__footer">
+            <small>&copy; 2022 <b>NeighborFood</b> - Todos los derechos
+                reservados</small>
+        </div>
+    </aside>
+    <main>
+        <section class="suggestion-food">
+            <h2 class="suggestion-food__title">¿Antojo de?</h2>
+            <div id="slider-container" class="slider__container">
+                <div class="slider__button">
+                    <i id="button-left" class="fa-solid fa-circle-arrow-left"></i>
+                    <i id="button-right" class="fa-solid fa-circle-arrow-right"></i>
                 </div>
-                <div class="button-container">
-                    <a href="html/login.html" class="button">Iniciar Sesión</a>
-                    <a href="html/register.html" class="button">Registrate</a>
-                </div>
-                <div class="main-menu__search-container">
-                    <form class="search">
-                        <input
-                            class="search__input"
-                            type="text"
-                            required=""
-                            placeholder="¿Que estas buscando?"
-                            id="search-menu"
-                        />
-                        <i class="fa-solid fa-magnifying-glass search__icon"></i>
-                    </form>
-                </div>
-                <nav class="section-nav">
-                    <p class="section-nav__title">Secciones</p>
-                    <ul>
-                        <li class="section-nav__item">
-                            <a href="#">Cerca de tí</a>
-                        </li>
-                        <li class="section-nav__item">
-                            <a href="#">Explorar Mapa</a>
-                        </li>
-                        <li class="section-nav__item">
-                            <a href="#">Categorias</a>
-                        </li>
-                        <li class="section-nav__item">
-                            <a href="#">Promociones</a>
-                        </li>
-                        <li class="section-nav__item">
-                            <a href="#">Comidas</a>
-                        </li>
-                        <li class="section-nav__item">
-                            <a href="#">Tematicas</a>
-                        </li>
-                    </ul>
-                </nav>
-                <nav class="section-nav">
-                    <p class="section-nav__title">Otros</p>
-                    <ul>
-                        <li class="section-nav__item">
-                            <a href="../html/register.html">Registrate como usuario</a>
-                        </li>
-                        <li class="section-nav__item">
-                            <a href="../html/register.html">Registra tu restaurante</a>
-                        </li>
-                    </ul>
-                </nav>
-                <nav class="main-menu__social">
-                    <ul class="social-icons__list">
-                        <li class="social-icons__item">
-                            <a
-                                href="https://facebook.com"
-                                class="fa-brands fa-facebook"
-                                target="_blank"
-                            ></a>
-                        </li>
-                        <li class="social-icons__item">
-                            <a
-                                href="https://instagram.com"
-                                class="fa-brands fa-instagram"
-                                target="_blank"
-                            ></a>
-                        </li>
-                        <li class="social-icons__item">
-                            <a
-                                href="https://twitter.com"
-                                class="fa-brands fa-twitter"
-                                target="_blank"
-                            ></a>
-                        </li>
-                    </ul>
-                    <select name="language" id="language" class="select-language">
-                        <option value="es">Español</option>
-                        <option value="en">English</option>
-                    </select>
-                </nav>
-                <div class="main-menu__footer">
-                    <small
-                        >&copy; 2022 <b>NeighborFood</b> - Todos los derechos
-                        reservados</small
-                    >
-                </div>
-            </aside>
-        <main>
-            <section class="suggestion-food">
-                <h2 class="suggestion-food__title">¿Antojo de?</h2>
-                <div id="slider-container" class="slider__container">
-                    <div class="slider__button">
-                        <i
-                            id="button-left"
-                            class="fa-solid fa-circle-arrow-left"
-                        ></i>
-                        <i
-                            id="button-right"
-                            class="fa-solid fa-circle-arrow-right"
-                        ></i>
-                    </div>
-                    <ul class="slider" id="slider">
-                        <li class="slider__element">
-                            <a href="#">
-                                <img
-                                    src="assets/img/suggestion-food/Burguer.webp"
-                                    alt=""
-                                />
-                                <h3 class="slider__subtitle">Burguer</h3>
-                            </a>
-                        </li>
-                        <li class="slider__element">
-                            <a href="#">
-                                <img
-                                    src="assets/img/suggestion-food/Pizza.webp"
-                                    alt=""
-                                />
-                                <h3 class="slider__subtitle">Pizza</h3>
-                            </a>
-                        </li>
-                        <li class="slider__element">
-                            <a href="#">
-                                <img
-                                    src="assets/img/suggestion-food/Pollo.webp"
-                                    alt=""
-                                />
-                                <h3 class="slider__subtitle">Pollo</h3>
-                            </a>
-                        </li>
-                        <li class="slider__element">
-                            <a href="#">
-                                <img
-                                    src="assets/img/suggestion-food/Tipica.webp"
-                                    alt=""
-                                />
-                                <h3 class="slider__subtitle">Tipica</h3>
-                            </a>
-                        </li>
-                        <li class="slider__element">
-                            <a href="#">
-                                <img
-                                    src="assets/img/suggestion-food/Sushi.webp"
-                                    alt=""
-                                />
-                                <h3 class="slider__subtitle">Sushi</h3>
-                            </a>
-                        </li>
-                        <li class="slider__element">
-                            <a href="#">
-                                <img
-                                    src="assets/img/suggestion-food/Italiana.webp"
-                                    alt=""
-                                />
-                                <h3 class="slider__subtitle">Italiana</h3>
-                            </a>
-                        </li>
-                        <li class="slider__element">
-                            <a href="#">
-                                <img
-                                    src="assets/img/suggestion-food/Mexicana.webp"
-                                    alt=""
-                                />
-                                <h3 class="slider__subtitle">Mexicana</h3>
-                            </a>
-                        </li>
-                        <li class="slider__element">
-                            <a href="#">
-                                <img
-                                    src="assets/img/suggestion-food/Parrilla.webp"
-                                    alt=""
-                                />
-                                <h3 class="slider__subtitle">Parrilla</h3>
-                            </a>
-                        </li>
-                        <li class="slider__element">
-                            <a href="#">
-                                <img
-                                    src="assets/img/suggestion-food/Panaderia.webp"
-                                    alt=""
-                                />
-                                <h3 class="slider__subtitle">Panaderia</h3>
-                            </a>
-                        </li>
-                        <li class="slider__element">
-                            <a href="#">
-                                <img
-                                    src="assets/img/suggestion-food/Postres.webp"
-                                    alt=""
-                                />
-                                <h3 class="slider__subtitle">Postres</h3>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <article class="restaurants-nearby">
-                <h2 class="restaurants-nearby__title">Cerca de tí.</h2>
-                <div class="restaurants-nearby__container">
-                    <div class="map__container">
-                        <iframe
-                            class="map"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63629.16091054775!2d-74.2225913171508!3d4.625726192910794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9e6fec7428e9%3A0x46c5252ef4b8d101!2zQm9zYSwgQm9nb3TDoSwgQm9nb3Rh!5e0!3m2!1sen!2sco!4v1659644071545!5m2!1sen!2sco"
-                            width="600"
-                            height="450"
-                            style="border: 0"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
-                        ></iframe>
-                    </div>
-                    <div class="restaurant-card__container">
-                        <a href="html/product.html">
-                            <section class="restaurant-card">
-                                <img
-                                    src="assets/img/restaurants-nearby/Taqueria.webp"
-                                    alt="Taqueria Don Clemente"
-                                    class="restaurant-card__image"
-                                />
-                                <div class="restaurant-card__info">
-                                    <h3 class="restaurant-card__title">
-                                        Taqueria Don Clemente
-                                    </h3>
-                                    <p class="restaurant-card__address">
-                                        <i class="fa-solid fa-location-dot"></i>
-                                        Cra. 11 #79-6
-                                    </p>
-                                    <p class="restaurant-card__text">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Blanditiis, dolorem?
-                                    </p>
-                                </div>
-                            </section>
-                        </a>
-                        <a href="#">
-                            <section class="restaurant-card">
-                                <img
-                                    src="assets/img/restaurants-nearby/Asadero.webp"
-                                    alt="El Brazon dorado"
-                                    class="restaurant-card__image"
-                                />
-                                <div class="restaurant-card__info">
-                                    <h3 class="restaurant-card__title">
-                                        El Brazon Dorado
-                                    </h3>
-                                    <p class="restaurant-card__address">
-                                        <i class="fa-solid fa-location-dot"></i>
-                                        Cl 132 #92-08
-                                    </p>
-                                    <p class="restaurant-card__text">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Blanditiis, dolorem?
-                                    </p>
-                                </div>
-                            </section>
-                        </a>
-                        <a href="#">
-                            <section class="restaurant-card">
-                                <img
-                                    src="assets/img/restaurants-nearby/papas.webp"
-                                    alt="Max Papas"
-                                    class="restaurant-card__image"
-                                />
-                                <div class="restaurant-card__info">
-                                    <h3 class="restaurant-card__title">Max Papas</h3>
-                                    <p class="restaurant-card__address">
-                                        <i class="fa-solid fa-location-dot"></i>
-                                        Cl. 151 #103F-10
-                                    </p>
-                                    <p class="restaurant-card__text">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Blanditiis, dolorem?
-                                    </p>
-                                </div>
-                            </section>
-                        </a>
-                        <a href="#">
-                            <section class="restaurant-card">
-                                <img
-                                    src="assets/img/restaurants-nearby/Lechona.webp"
-                                    alt="La Lechoneria"
-                                    class="restaurant-card__image"
-                                />
-                                <div class="restaurant-card__info">
-                                    <h3 class="restaurant-card__title">
-                                        La Lechoneria
-                                    </h3>
-                                    <p class="restaurant-card__address">
-                                        <i class="fa-solid fa-location-dot"></i>
-                                        Cl 132 # 10 D 82
-                                    </p>
-                                    <p class="restaurant-card__text">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Blanditiis, dolorem?
-                                    </p>
-                                </div>
-                            </section>
-                        </a>
-                        <a href="#">
-                            <section class="restaurant-card">
-                                <img
-                                    src="assets/img/restaurants-nearby/Pizza.webp"
-                                    alt="Vostra Pizza"
-                                    class="restaurant-card__image"
-                                />
-                                <div class="restaurant-card__info">
-                                    <h3 class="restaurant-card__title">
-                                        Vostra Pizza
-                                    </h3>
-                                    <p class="restaurant-card__address">
-                                        <i class="fa-solid fa-location-dot"></i>
-                                        Cl. 146a #92-116
-                                    </p>
-                                    <p class="restaurant-card__text">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Blanditiis, dolorem?
-                                    </p>
-                                </div>
-                            </section>
-                        </a>
-                    </div>
-                </div>
-                <footer class="restaurants-nearby__footer">
-                    <a href="#" class="restaurants-nearby__link">Ver Más</a>
-                    <a href="#" class="restaurants-nearby__link">Explorar Mapa</a>
-                </footer>
-            </article>
-            <section class="highlights">
-                <h2 class="highlights__title">Destacados de la semana.</h2>
-                <div class="highlights__slider">
-                    <ul class="slider slider-two" id="highlights-slider">
-                        <li class="slider-two__element">
-                            <a href="#">
-                                <img
-                                    src="assets/img/highlights/Frenessi.webp"
-                                    alt="Frenessi"
-                                />
-                                <div class="slider-two__info">
-                                    <h3 class="slider-two__subtitle">Frenessí</h3>
-                                    <span class="slider-two__address"
-                                        >AutoNorte 114 - 44</span
-                                    >
-                                </div>
-                            </a>
-                        </li>
-                        <li class="slider-two__element">
-                            <a href="#">
-                                <img
-                                    src="assets/img/highlights/Indio de Machu-Pichu.webp"
-                                    alt="Indio de Machu-Pichu"
-                                />
-                                <div class="slider-two__info">
-                                    <h3 class="slider-two__subtitle">
-                                        Indio de Machu Picchu
-                                    </h3>
-                                    <span class="slider-two__address"
-                                        >Carrera 10 # 72-32</span
-                                    >
-                                </div>
-                            </a>
-                        </li>
-                        <li class="slider-two__element">
-                            <a href="#">
-                                <img
-                                    src="assets/img/highlights/Piazza-italia.webp"
-                                    alt="Piazza Italia"
-                                />
-                                <div class="slider-two__info">
-                                    <h3 class="slider-two__subtitle">
-                                        Piazza Italia
-                                    </h3>
-                                    <span class="slider-two__address"
-                                        >Calle 93a #13a 21,</span
-                                    >
-                                </div>
-                            </a>
-                        </li>
-                        <li class="slider-two__element">
-                            <a href="#">
-                                <img
-                                    src="assets/img/highlights/storia_damore.webp"
-                                    alt="storia damore"
-                                />
-                                <div class="slider-two__info">
-                                    <h3 class="slider-two__subtitle">
-                                        Storia D'amore
-                                    </h3>
-                                    <span class="slider-two__address"
-                                        >Carrera 13 82 36</span
-                                    >
-                                </div>
-                            </a>
-                        </li>
-                        <li class="slider-two__element">
-                            <a href="#">
-                                <img
-                                    src="assets/img/highlights/Omm.webp"
-                                    alt="Omm"
-                                />
-                                <div class="slider-two__info">
-                                    <h3 class="slider-two__subtitle">Omm</h3>
-                                    <span class="slider-two__address"
-                                        >AutoNorte 114 - 44</span
-                                    >
-                                </div>
-                            </a>
-                        </li>
-                        <li class="slider-two__element">
-                            <a href="#">
-                                <img
-                                    src="assets/img/highlights/tierra.webp"
-                                    alt=""
-                                />
-                                <div class="slider-two__info">
-                                    <h3 class="slider-two__subtitle">
-                                        Tierra Restaurante
-                                    </h3>
-                                    <span class="slider-two__address"
-                                        >Calle 66 No. 4a - 31</span
-                                    >
-                                </div>
-                            </a>
-                        </li>
-                        <li class="slider-two__element">
-                            <a href="#">
-                                <img
-                                    src="assets/img/highlights/capitalino.webp"
-                                    alt="capitalino restaurant"
-                                />
-                                <div class="slider-two__info">
-                                    <h3 class="slider-two__subtitle">
-                                        Capitalino Restaurant
-                                    </h3>
-                                    <span class="slider-two__address"
-                                        >Calle 24a 57 60</span
-                                    >
-                                </div>
-                            </a>
-                        </li>
-                        <li class="slider-two__element">
-                            <a href="#">
-                                <img
-                                    src="assets/img/highlights/Descortes.webp"
-                                    alt="descortes"
-                                />
-                                <div class="slider-two__info">
-                                    <h3 class="slider-two__subtitle">Descortés</h3>
-                                    <span class="slider-two__address"
-                                        >AutoNorte 114 - 44</span
-                                    >
-                                </div>
-                            </a>
-                        </li>
-                        <li class="slider-two__element">
-                            <a href="#">
-                                <img
-                                    src="assets/img/highlights/Arcades.webp"
-                                    alt="arcades"
-                                />
-                                <div class="slider-two__info">
-                                    <h3 class="slider-two__subtitle">Arcadés</h3>
-                                    <span class="slider-two__address"
-                                        >Calle 66a 77a 70</span
-                                    >
-                                </div>
-                            </a>
-                        </li>
-                        <li class="slider-two__element">
-                            <a href="#">
-                                <img
-                                    src="assets/img/highlights/cantina.webp"
-                                    alt=""
-                                />
-                                <div class="slider-two__info">
-                                    <h3 class="slider-two__subtitle">
-                                        Cantina La 15 Bogotá
-                                    </h3>
-                                    <span class="slider-two__address"
-                                        >Carrera 13 83 57</span
-                                    >
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="categories">
-                <h2 class="categories__title">Categorias de Restaurantes</h2>
-                <div class="categories__container">
-                    <a href="#" class="categories__button">
-                        <i class="fa-solid fa-star"></i> Mejor Puntuados
-                    </a>
-                    <a href="#" class="categories__button">
-                        <i class="fa-solid fa-tags"></i> En Promoción
-                    </a>
-                    <a href="#" class="categories__button">
-                        <i class="fa-solid fa-utensils"></i> Tematicos
-                    </a>
-                    <a href="#" class="categories__button">
-                        <i class="fa-solid fa-people-group"></i> Mas Visitados
-                    </a>
-                </div>
-            </section>
-            <section class="register-card">
-                <div class="register-card__title">
-                    <p class="register-card__text">Haz parte de</p>
-                    <img
-                        class="register-card__logo"
-                        src="assets/img/logo/logo-nf-completo.webp"
-                        alt="Logo NeighborFood"
-                    />
-                </div>
-                <div class="join-card__container">
-                    <section class="join-card">
-                        <img
-                            class="join-card__image"
-                            src="assets/img/register/customer.webp"
-                            alt="Cliente"
-                        />
-                        <div class="join-card__info">
-                            <h3 class="join-card__title">¡Únete como cliente!</h3>
-                            <p class="join-card__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Non, odit. Nostrum obcaecati voluptatibus
-                                consequatur iusto.
-                            </p>
-                        </div>
-                        <a class="join-card__link" href="#">Más Información</a>
-                    </section>
-                    <section class="join-card">
-                        <img
-                            class="join-card__image"
-                            src="assets/img/register/restaurant.webp"
-                            alt="Cliente"
-                        />
-                        <div class="join-card__info">
-                            <h3 class="join-card__title">
-                                ¡Registra tu restaurante!
-                            </h3>
-                            <p class="join-card__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Non, odit. Nostrum obcaecati voluptatibus
-                                consequatur iusto.
-                            </p>
-                        </div>
-                        <a class="join-card__link" href="#">Más Información</a>
-                    </section>
-                </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="footer__group-one">
-                <img
-                    class="footer__logo"
-                    src="assets/img/logo/logo-nf-medio.webp"
-                    alt=""
-                />
-                <a href="#" class="footer__about-us">+ Acerca de Nosotros</a>
-                <select
-                    name="language"
-                    id="language-footer"
-                    class="select-language select-language--footer"
-                >
-                    <option value="es">Español</option>
-                    <option value="en">English</option>
-                </select>
-                <ul class="social-icons__list social-icons__list--footer">
-                    <li class="social-icons__item">
-                        <a
-                            href="https://facebook.com"
-                            class="fa-brands fa-facebook"
-                            target="_blank"
-                        ></a>
-                    </li>
-                    <li class="social-icons__item">
-                        <a
-                            href="https://instagram.com"
-                            class="fa-brands fa-instagram"
-                            target="_blank"
-                        ></a>
-                    </li>
-                    <li class="social-icons__item">
-                        <a
-                            href="https://twitter.com"
-                            class="fa-brands fa-twitter"
-                            target="_blank"
-                        ></a>
-                    </li>
+                <ul class="slider" id="slider">
+
                 </ul>
             </div>
-            <div class="footer__group-two">
-                <small
-                    >&copy; 2022 <b>NeighborFood</b> - Todos los derechos
-                    reservados</small
-                >
+        </section>
+        <article class="restaurants-nearby">
+            <h2 class="restaurants-nearby__title">Cerca de tí.</h2>
+            <div class="restaurants-nearby__container">
+                <div class="map__container">
+                    <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63629.16091054775!2d-74.2225913171508!3d4.625726192910794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9e6fec7428e9%3A0x46c5252ef4b8d101!2zQm9zYSwgQm9nb3TDoSwgQm9nb3Rh!5e0!3m2!1sen!2sco!4v1659644071545!5m2!1sen!2sco"
+                        width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="restaurant-card__container">
+                    <a href="html/product.html">
+                        <section class="restaurant-card">
+                            <img src="assets/img/restaurants-nearby/Taqueria.webp" alt="Taqueria Don Clemente"
+                                class="restaurant-card__image" />
+                            <div class="restaurant-card__info">
+                                <h3 class="restaurant-card__title">
+                                    Taqueria Don Clemente
+                                </h3>
+                                <p class="restaurant-card__address">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Cra. 11 #79-6
+                                </p>
+                                <p class="restaurant-card__text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Blanditiis, dolorem?
+                                </p>
+                            </div>
+                        </section>
+                    </a>
+                    <a href="#">
+                        <section class="restaurant-card">
+                            <img src="assets/img/restaurants-nearby/Asadero.webp" alt="El Brazon dorado"
+                                class="restaurant-card__image" />
+                            <div class="restaurant-card__info">
+                                <h3 class="restaurant-card__title">
+                                    El Brazon Dorado
+                                </h3>
+                                <p class="restaurant-card__address">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Cl 132 #92-08
+                                </p>
+                                <p class="restaurant-card__text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Blanditiis, dolorem?
+                                </p>
+                            </div>
+                        </section>
+                    </a>
+                    <a href="#">
+                        <section class="restaurant-card">
+                            <img src="assets/img/restaurants-nearby/papas.webp" alt="Max Papas"
+                                class="restaurant-card__image" />
+                            <div class="restaurant-card__info">
+                                <h3 class="restaurant-card__title">Max Papas</h3>
+                                <p class="restaurant-card__address">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Cl. 151 #103F-10
+                                </p>
+                                <p class="restaurant-card__text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Blanditiis, dolorem?
+                                </p>
+                            </div>
+                        </section>
+                    </a>
+                    <a href="#">
+                        <section class="restaurant-card">
+                            <img src="assets/img/restaurants-nearby/Lechona.webp" alt="La Lechoneria"
+                                class="restaurant-card__image" />
+                            <div class="restaurant-card__info">
+                                <h3 class="restaurant-card__title">
+                                    La Lechoneria
+                                </h3>
+                                <p class="restaurant-card__address">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Cl 132 # 10 D 82
+                                </p>
+                                <p class="restaurant-card__text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Blanditiis, dolorem?
+                                </p>
+                            </div>
+                        </section>
+                    </a>
+                    <a href="#">
+                        <section class="restaurant-card">
+                            <img src="assets/img/restaurants-nearby/Pizza.webp" alt="Vostra Pizza"
+                                class="restaurant-card__image" />
+                            <div class="restaurant-card__info">
+                                <h3 class="restaurant-card__title">
+                                    Vostra Pizza
+                                </h3>
+                                <p class="restaurant-card__address">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Cl. 146a #92-116
+                                </p>
+                                <p class="restaurant-card__text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Blanditiis, dolorem?
+                                </p>
+                            </div>
+                        </section>
+                    </a>
+                </div>
             </div>
-        </footer>
+            <footer class="restaurants-nearby__footer">
+                <a href="#" class="restaurants-nearby__link">Ver Más</a>
+                <a href="#" class="restaurants-nearby__link">Explorar Mapa</a>
+            </footer>
+        </article>
+        <section class="highlights">
+            <h2 class="highlights__title">Destacados de la semana.</h2>
+            <div class="highlights__slider">
+                <ul class="slider slider-two" id="highlights-slider">
 
-        <!-- Scripts -->
-        <!-- Icons -->
-        <script
-            src="https://kit.fontawesome.com/36c7cc7f6f.js"
-            crossorigin="anonymous"
-        ></script>
-        <!-- My Scripts -->
-        <script src="js/script.js"></script>
-    </body>
+                </ul>
+            </div>
+        </section>
+        <section class="categories">
+            <h2 class="categories__title">Categorias de Restaurantes</h2>
+            <div class="categories__container">
+                <a href="#" class="categories__button">
+                    <i class="fa-solid fa-star"></i> Mejor Puntuados
+                </a>
+                <a href="#" class="categories__button">
+                    <i class="fa-solid fa-tags"></i> En Promoción
+                </a>
+                <a href="#" class="categories__button">
+                    <i class="fa-solid fa-utensils"></i> Tematicos
+                </a>
+                <a href="#" class="categories__button">
+                    <i class="fa-solid fa-people-group"></i> Mas Visitados
+                </a>
+            </div>
+        </section>
+        <section class="register-card">
+            <div class="register-card__title">
+                <p class="register-card__text">Haz parte de</p>
+                <img class="register-card__logo" src="assets/img/logo/logo-nf-completo.webp" alt="Logo NeighborFood" />
+            </div>
+            <div class="join-card__container">
+                <section class="join-card">
+                    <img class="join-card__image" src="assets/img/register/customer.webp" alt="Cliente" />
+                    <div class="join-card__info">
+                        <h3 class="join-card__title">¡Únete como cliente!</h3>
+                        <p class="join-card__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Non, odit. Nostrum obcaecati voluptatibus
+                            consequatur iusto.
+                        </p>
+                    </div>
+                    <a class="join-card__link" href="#">Más Información</a>
+                </section>
+                <section class="join-card">
+                    <img class="join-card__image" src="assets/img/register/restaurant.webp" alt="Cliente" />
+                    <div class="join-card__info">
+                        <h3 class="join-card__title">
+                            ¡Registra tu restaurante!
+                        </h3>
+                        <p class="join-card__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Non, odit. Nostrum obcaecati voluptatibus
+                            consequatur iusto.
+                        </p>
+                    </div>
+                    <a class="join-card__link" href="#">Más Información</a>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__group-one">
+            <img class="footer__logo" src="assets/img/logo/logo-nf-medio.webp" alt="" />
+            <a href="#" class="footer__about-us">+ Acerca de Nosotros</a>
+            <select name="language" id="language-footer" class="select-language select-language--footer">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+            </select>
+            <ul class="social-icons__list social-icons__list--footer">
+                <li class="social-icons__item">
+                    <a href="https://facebook.com" class="fa-brands fa-facebook" target="_blank"></a>
+                </li>
+                <li class="social-icons__item">
+                    <a href="https://instagram.com" class="fa-brands fa-instagram" target="_blank"></a>
+                </li>
+                <li class="social-icons__item">
+                    <a href="https://twitter.com" class="fa-brands fa-twitter" target="_blank"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__group-two">
+            <small>&copy; 2022 <b>NeighborFood</b> - Todos los derechos
+                reservados</small>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/36c7cc7f6f.js" crossorigin="anonymous"></script>
+    <!-- My Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/Categorias.js"></script>
+    <script src="js/Restaurantes.js"></script>
+</body>
+
 </html>

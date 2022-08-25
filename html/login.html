@@ -1,207 +1,161 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Icon -->
-        <link rel="icon" href="assets/img/icon.webp" />
-        <!-- Icons -->
-        <link rel="icon" href="assets/img/icon.webp" />
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap"
-            rel="stylesheet"
-        />
-        <!-- Styles -->
-        <link rel="stylesheet" href="../css/normalize.css" />
-        <link rel="stylesheet" href="../css/styles.css" />
-        <link rel="stylesheet" href="../css/header.css" />
-        <link rel="stylesheet" href="../css/footer.css" />
-        <link rel="stylesheet" href="../css/login.css" />
-        <title>Ingresa</title>
-    </head>
-    <body>
-        <header class="header">
-            <div id="toggle-menu" class="toggle-menu">
-                <i class="toggle-menu__icon fa-solid fa-bars"></i>
-            </div>
-            <div class="back">
-                <a href="../index.html">
-                    <i class="fa-solid fa-caret-left"></i>
-                    <span class="back__text">Volver</span>
-                </a>
-            </div>
-            <a href="../index.html" class="logo">
-                <picture>
-                    <source
-                        media="(min-width: 768px)"
-                        srcset="../assets/img/logo/logo-nf-completo.webp"
-                    />
-                    <source srcset="../assets/img/logo/logo-nf-small.webp" />
-                    <img
-                        src="../assets/img/logo/logo-nf-small.webp"
-                        alt="Logo NeighborFood"
-                    />
-                </picture>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon -->
+    <link rel="icon" href="assets/img/icon.webp" />
+    <!-- Icons -->
+    <link rel="icon" href="assets/img/icon.webp" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <title>Ingresa</title>
+</head>
+
+<body>
+    <header class="header">
+        <div id="toggle-menu" class="toggle-menu">
+            <i class="toggle-menu__icon fa-solid fa-bars"></i>
+        </div>
+        <div class="back">
+            <a href="../index.html">
+                <i class="fa-solid fa-caret-left"></i>
+                <span class="back__text">Volver</span>
             </a>
-            <a href="../html/register.html" class="button button--header"
-                >Registrate</a
-            >
-        </header>
-        <aside id="main-menu" class="main-menu">
-            <div class="main-menu__header">
-                <a href="../index.html">
-                    <img
-                        class="main-menu__logo"
-                        src="../assets/img/logo/logo-nf-completo.webp"
-                        alt="Logo"
-                    />
-                </a>
-                <i
-                    id="main-menu__close"
-                    class="main-menu__close fa-regular fa-circle-xmark"
-                ></i>
-            </div>
-            <div class="button-container">
-                <a href="" class="button">Iniciar Sesión</a>
-                <a href="../html/register.html" class="button">Registrate</a>
-            </div>
-            <div class="main-menu__search-container">
-                <form class="search">
-                    <input
-                        class="search__input"
-                        type="text"
-                        required=""
-                        placeholder="¿Que estas buscando?"
-                        id="search-menu"
-                    />
-                    <i class="fa-solid fa-magnifying-glass search__icon"></i>
-                </form>
-            </div>
-            <nav class="section-nav">
-                <p class="section-nav__title">Secciones</p>
-                <ul>
-                    <li class="section-nav__item">
-                        <a href="#">Cerca de tí</a>
-                    </li>
-                    <li class="section-nav__item">
-                        <a href="#">Explorar Mapa</a>
-                    </li>
-                    <li class="section-nav__item">
-                        <a href="#">Categorias</a>
-                    </li>
-                    <li class="section-nav__item">
-                        <a href="#">Promociones</a>
-                    </li>
-                    <li class="section-nav__item">
-                        <a href="#">Comidas</a>
-                    </li>
-                    <li class="section-nav__item">
-                        <a href="#">Tematicas</a>
-                    </li>
-                </ul>
-            </nav>
-            <nav class="section-nav">
-                <p class="section-nav__title">Otros</p>
-                <ul>
-                    <li class="section-nav__item">
-                        <a href="../html/register.html">Registrate como usuario</a>
-                    </li>
-                    <li class="section-nav__item">
-                        <a href="../html/register.html">Registra tu restaurante</a>
-                    </li>
-                </ul>
-            </nav>
-            <nav class="main-menu__social">
-                <ul class="social-icons__list">
-                    <li class="social-icons__item">
-                        <a
-                            href="https://facebook.com"
-                            class="fa-brands fa-facebook"
-                            target="_blank"
-                        ></a>
-                    </li>
-                    <li class="social-icons__item">
-                        <a
-                            href="https://instagram.com"
-                            class="fa-brands fa-instagram"
-                            target="_blank"
-                        ></a>
-                    </li>
-                    <li class="social-icons__item">
-                        <a
-                            href="https://twitter.com"
-                            class="fa-brands fa-twitter"
-                            target="_blank"
-                        ></a>
-                    </li>
-                </ul>
-                <select name="language" id="language" class="select-language">
-                    <option value="es">Español</option>
-                    <option value="en">English</option>
-                </select>
-            </nav>
-            <div class="main-menu__footer">
-                <small
-                    >&copy; 2022 <b>NeighborFood</b> - Todos los derechos
-                    reservados</small
-                >
-            </div>
-        </aside>
-        <main class="main">
-            <div class="bogota-map__container">
-                <img
-                    class="bogota-map"
-                    src="../assets/img/login/bogota.webp"
-                    alt=""
-                />
-            </div>
-            <div class="login">
-                <h1 class="login__title">Iniciar Sesión</h1>
-                <ul class="login__button-container">
-                    <li class="login__item">
-                        <a href="#" class="log-in">
-                            <i class="fa-brands fa-google"></i>
-                            Ingresar con Google
-                        </a>
-                    </li>
-                    <li class="login__item">
-                        <a href="#" class="log-in">
-                            <i class="fa-brands fa-facebook"></i>
-                            Ingresar con facebook
-                        </a>
-                    </li>
-                    <li class="login__item">
-                        <a href="../html/login-email.html" class="log-in">
-                            <i class="fa-solid fa-at"></i>
-                            Ingresar con Correo</a
-                        >
-                    </li>
-                </ul>
-                <h2 class="register-link__title">¿No te has registrado aún?</h2>
-                <a class="register-link" href="../html/register.html"
-                    >Registrate aquí</a
-                >
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="footer__group-two">
-                <small
-                    >&copy; 2022 <b>NeighborFood</b> - Todos los derechos
-                    reservados</small
-                >
-            </div>
-        </footer>
-        <!-- Scripts -->
-        <!-- Icons -->
-        <script
-            src="https://kit.fontawesome.com/36c7cc7f6f.js"
-            crossorigin="anonymous"
-        ></script>
-        <!-- My Scripts -->
-        <script src="../js/script.js"></script>
-    </body>
+        </div>
+        <a href="../index.html" class="logo">
+            <picture>
+                <source media="(min-width: 768px)" srcset="../assets/img/logo/logo-nf-completo.webp" />
+                <source srcset="../assets/img/logo/logo-nf-small.webp" />
+                <img src="../assets/img/logo/logo-nf-small.webp" alt="Logo NeighborFood" />
+            </picture>
+        </a>
+        <a href="../html/register.html" class="button button--header">Registrate</a>
+    </header>
+    <aside id="main-menu" class="main-menu">
+        <div class="main-menu__header">
+            <a href="../index.html">
+                <img class="main-menu__logo" src="../assets/img/logo/logo-nf-completo.webp" alt="Logo" />
+            </a>
+            <i id="main-menu__close" class="main-menu__close fa-regular fa-circle-xmark"></i>
+        </div>
+        <div class="button-container">
+            <a href="" class="button">Iniciar Sesión</a>
+            <a href="../html/register.html" class="button">Registrate</a>
+        </div>
+        <div class="main-menu__search-container">
+            <form class="search">
+                <input class="search__input" type="text" required="" placeholder="¿Que estas buscando?"
+                    id="search-menu" />
+                <i class="fa-solid fa-magnifying-glass search__icon"></i>
+            </form>
+        </div>
+        <nav class="section-nav">
+            <p class="section-nav__title">Secciones</p>
+            <ul>
+                <li class="section-nav__item">
+                    <a href="#">Cerca de tí</a>
+                </li>
+                <li class="section-nav__item">
+                    <a href="#">Explorar Mapa</a>
+                </li>
+                <li class="section-nav__item">
+                    <a href="#">Categorias</a>
+                </li>
+                <li class="section-nav__item">
+                    <a href="#">Promociones</a>
+                </li>
+                <li class="section-nav__item">
+                    <a href="#">Comidas</a>
+                </li>
+                <li class="section-nav__item">
+                    <a href="#">Tematicas</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="section-nav">
+            <p class="section-nav__title">Otros</p>
+            <ul>
+                <li class="section-nav__item">
+                    <a href="../html/register.html">Registrate como usuario</a>
+                </li>
+                <li class="section-nav__item">
+                    <a href="../html/register.html">Registra tu restaurante</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="main-menu__social">
+            <ul class="social-icons__list">
+                <li class="social-icons__item">
+                    <a href="https://facebook.com" class="fa-brands fa-facebook" target="_blank"></a>
+                </li>
+                <li class="social-icons__item">
+                    <a href="https://instagram.com" class="fa-brands fa-instagram" target="_blank"></a>
+                </li>
+                <li class="social-icons__item">
+                    <a href="https://twitter.com" class="fa-brands fa-twitter" target="_blank"></a>
+                </li>
+            </ul>
+            <select name="language" id="language" class="select-language">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+            </select>
+        </nav>
+        <div class="main-menu__footer">
+            <small>&copy; 2022 <b>NeighborFood</b> - Todos los derechos
+                reservados</small>
+        </div>
+    </aside>
+    <main class="main">
+        <div class="bogota-map__container">
+            <img class="bogota-map" src="../assets/img/login/bogota.webp" alt="" />
+        </div>
+        <div class="login">
+            <h1 class="login__title">Iniciar Sesión</h1>
+            <ul class="login__button-container">
+                <li class="login__item">
+                    <a href="#" class="log-in">
+                        <i class="fa-brands fa-google"></i>
+                        Ingresar con Google
+                    </a>
+                </li>
+                <li class="login__item">
+                    <a href="#" class="log-in">
+                        <i class="fa-brands fa-facebook"></i>
+                        Ingresar con facebook
+                    </a>
+                </li>
+                <li class="login__item">
+                    <a href="../html/correoLogin.html" class="log-in">
+                        <i class="fa-solid fa-at"></i>
+                        Ingresar con Correo</a>
+                </li>
+            </ul>
+            <h2 class="register-link__title">¿No te has registrado aún?</h2>
+            <a class="register-link" href="../html/register.html">Registrate aquí</a>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__group-two">
+            <small>&copy; 2022 <b>NeighborFood</b> - Todos los derechos
+                reservados</small>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/36c7cc7f6f.js" crossorigin="anonymous"></script>
+    <!-- My Scripts -->
+    <script src="../js/script.js"></script>
+</body>
+
 </html>
