@@ -1,12 +1,12 @@
-const options1 = { method: 'GET', url: 'https://localhost:44324/api/restaurantes' };
+const options1 = { method: 'GET', url: 'https://neighbodfood.azurewebsites.net/api/restaurantes' };
 
 axios.request(options1).then(function (response) {
-    let restaurantes = response.data;
+  let restaurantes = response.data;
 
-    let res = '';
+  let res = '';
 
-    restaurantes.forEach(resta => {
-        res += `
+  restaurantes.forEach(resta => {
+    res += `
     <li class="slider-two__element">
       <a href="#">
         <img src="${resta.restA_Imagen}" />
@@ -18,11 +18,11 @@ axios.request(options1).then(function (response) {
     </li>
     `
 
-        document.getElementById('highlights-slider').innerHTML = res;
-    });
+    document.getElementById('highlights-slider').innerHTML = res;
+  });
 
 
 
 }).catch(function (error) {
-    console.error(error);
+  console.error(error);
 });
