@@ -1,4 +1,4 @@
-const options = { method: 'GET', url: 'https://localhost:44324/api/categorias' };
+const options = { method: 'GET', url: 'https://neighbodfood.azurewebsites.net/api/categorias' };
 
 axios.request(options).then(function (response) {
     const datos = response.data;
