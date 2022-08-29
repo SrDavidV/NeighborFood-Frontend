@@ -15,7 +15,7 @@ inicio.addEventListener('submit', function (e) {
 
     const options = {
         method: 'POST',
-        url: 'https://localhost:44324/api/cliente',
+        url: 'https://neighbodfood.azurewebsites.net/api/cliente',
         data: {
             pK_Cedula: datos.get('num_document'),
             clI_Nombre: datos.get('nombre'),
