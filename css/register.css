@@ -1,56 +1,56 @@
-body{
+body {
     position: relative;
     min-height: 100vh;
-    border: 0.1px solid ;
+    border: 0.1px solid;
 }
 
-.toggle-menu{
+.toggle-menu {
     position: absolute;
     right: 1em;
 }
 
-.back{
+.back {
     position: absolute;
     left: 1em;
     color: var(--main-color);
     font-size: 1.5rem;
 }
 
-.back__text{
+.back__text {
     display: none;
 }
 
 @media screen and (min-width:768px) {
-    .back__text{
+    .back__text {
         display: initial;
     }
 }
 
-.logo{
+.logo {
     display: initial;
     margin-left: auto;
 }
 
-.button--header{
+.button--header {
     display: none;
 }
 
 /* Main */
 
 @media screen and (min-width:1024px) {
-    .main{
+    .main {
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
 }
 
-.image__container{
+.image__container {
     display: none;
 }
 
 @media screen and (min-width:1024px) {
-    .image__container{
+    .image__container {
         display: block;
         width: 35%;
         margin-right: auto;
@@ -60,7 +60,7 @@ body{
 }
 
 
-.register{
+.register {
     width: 90%;
     margin: 0 auto 60px;
     padding: 1em .5em;
@@ -75,13 +75,13 @@ body{
 
 @media screen and (min-width:768px) {
 
-    .register{
+    .register {
         max-width: 600px;
     }
 }
 
 @media screen and (min-width:1024px) {
-    .register{
+    .register {
         max-width: none;
         width: 40%;
         max-height: 70vh;
@@ -89,7 +89,7 @@ body{
     }
 }
 
-.register__title{
+.register__title {
     text-align: center;
     color: var(--secondary-color);
 }
@@ -99,12 +99,12 @@ body{
     border: none;
 }
 
-.register__subtitle{
+.register__subtitle {
     display: block;
     margin-bottom: 0.5em;
 }
 
-.register__controls{
+.register__controls {
     background: var(--third-color);
     width: 100%;
     padding: .7em;
@@ -117,28 +117,28 @@ body{
     border: 2px solid var(--secondary-color);
 }
 
-.terms-conditions{
+.terms-conditions {
     margin-bottom: 1em;
     text-align: center;
     color: var(--secondary-color);
 }
 
-.terms-conditions__link{
+.terms-conditions__link {
     font-weight: 700;
     text-decoration: underline;
 }
 
-.terms-conditions__check{
+.terms-conditions__check {
     font-size: 1rem;
     text-align: left;
 }
 
-.register__button{
+.register__button {
     display: block;
     width: 90%;
     margin: 0 auto .5em;
     padding: .5em;
-    text-align:center;
+    text-align: center;
     font-size: 1.5rem;
     font-weight: 700;
     background-color: var(--secondary-color);
@@ -150,20 +150,25 @@ body{
     -o-border-radius: 1em;
 }
 
-@media screen and (min-width:1024px) {
-.register__button{
-    transition: var(--transition);
-    -webkit-transition: var(--transition);
-    -moz-transition: var(--transition);
-    -ms-transition: var(--transition);
-    -o-transition: var(--transition);
-}
-.register__button:hover{
-    background-color: #dda15e;
-}
+input:invalid {
+    border: 2px dashed red;
 }
 
-.login__link{
+@media screen and (min-width:1024px) {
+    .register__button {
+        transition: var(--transition);
+        -webkit-transition: var(--transition);
+        -moz-transition: var(--transition);
+        -ms-transition: var(--transition);
+        -o-transition: var(--transition);
+    }
+
+    .register__button:hover {
+        background-color: #dda15e;
+    }
+}
+
+.login__link {
     display: block;
     width: 50%;
     margin: 0 auto;
@@ -172,28 +177,28 @@ body{
 }
 
 @media screen and (min-width:1024px) {
-.login__link{
-    transition: var(--transition);
-    -webkit-transition: var(--transition);
-    -moz-transition: var(--transition);
-    -ms-transition: var(--transition);
-    -o-transition: var(--transition);
-}
+    .login__link {
+        transition: var(--transition);
+        -webkit-transition: var(--transition);
+        -moz-transition: var(--transition);
+        -ms-transition: var(--transition);
+        -o-transition: var(--transition);
+    }
 
-.login__link:hover{
-    color: #ff8800;
-    text-decoration: underline;
-}
+    .login__link:hover {
+        color: #ff8800;
+        text-decoration: underline;
+    }
 }
 
 /* Footer */
 
-.footer{
+.footer {
     position: absolute;
     bottom: 0;
     width: 100%;
 }
 
-.footer__group-two{
+.footer__group-two {
     text-align: center;
 }
