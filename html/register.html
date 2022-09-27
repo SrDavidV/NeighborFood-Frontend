@@ -128,7 +128,7 @@
             <fieldset>
                 <label for="num_document" class="register__subtitle">Numero de documento</label>
                 <input required id="num_document" name="num_document" class="register__controls" type="text"
-                    placeholder="Numero De Documento" aria-label="Numero De Documento" />
+                    minlength="8" maxlength="11" placeholder="Numero De Documento" aria-label="Numero De Documento" />
             </fieldset>
             <fieldset>
                 <label for="gender" class="register__subtitle">Elige tu genero:</label>
@@ -154,6 +154,7 @@
                 <input required class="register__controls" name="email" id="email" type="email"
                     placeholder="Correo Electronico" aria-label="Correo Electronico" autocapitalize="none"
                     spellcheck="false" />
+
             </fieldset>
             <fieldset>
                 <label for="phone" class="register__subtitle">Celular</label>
@@ -208,11 +209,11 @@
                     Si
                 </label>
                 <label class="terms-conditions__check" for="terms-no">
-                    <input class="option" id="terms-no" type="radio" value="NO" name="terms" />
+                    <input class="option" id="terms-no" type="radio" checked value="NO" name="terms" />
                     No
                 </label>
             </fieldset>
-            <input class="register__button" value="Registrarse" type="submit" />
+            <input class="register__button" value="Registrarse" type="submit" id="registro" />
             <a href="../html/login.html" class="login__link">Ya tengo cuenta.</a>
         </form>
     </main>
@@ -230,6 +231,7 @@
     <!-- My Scripts -->
     <script src="../js/script.js"></script>
     <script src="../js/ClienteRegistro.js"></script>
+    <script src="../js/validacion.js"></script>
 </body>
 
 </html>

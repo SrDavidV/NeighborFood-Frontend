@@ -150,9 +150,18 @@ body {
     -o-border-radius: 1em;
 }
 
-input:invalid {
-    border: 2px dashed red;
+.register__button:hover {
+    cursor: pointer;
 }
+
+input.invalid {
+    border-color: #900;
+}
+
+input:focus.invalid {
+    outline: none;
+}
+
 
 @media screen and (min-width:1024px) {
     .register__button {
