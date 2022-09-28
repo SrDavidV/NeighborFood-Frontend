@@ -3,7 +3,7 @@ console.log("nuevo cliente");
 
 function redireccionar(time) {
     setTimeout(function () {
-        window.location.href = '/../profile.html';
+        window.location.href = '/../html/profile.html';
     }, time);
 }
 
