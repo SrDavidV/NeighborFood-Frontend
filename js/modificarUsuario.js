@@ -1,6 +1,9 @@
 const modificar = document.getElementById('save');
 const id2 = localStorage.getItem('id');
 const formulario = document.getElementById('form');
+var patch = new FormData(formulario);
+
+console.log(patch.get('name'));
 
 modificar.addEventListener('click', (e) => {
 
@@ -18,7 +21,7 @@ modificar.addEventListener('click', (e) => {
   }).then((result) => {
     if (result.isConfirmed) {
 
-      var patch = new FormData(formulario);
+
       const options = {
         method: 'PATCH',
         url: `https://neighbodfood.azurewebsites.net/api/cliente/${id2}`,
@@ -30,7 +33,11 @@ modificar.addEventListener('click', (e) => {
           { path: '/clI_Genero', op: 'replace', value: patch.get('gender') }
         ]
       };
-
+      console.log(patch.get('name'));
+      console.log(patch.get('lastname'));
+      console.log(patch.get('email'));
+      console.log(patch.get('phone'));
+      console.log(patch.get('gender'));
       axios.request(options).then(function (response) {
         if (response.status == 204) {
           Swal.fire({
