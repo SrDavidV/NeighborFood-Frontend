@@ -156,44 +156,50 @@
             Mis ultimas compras
           </a>
         </li>
+        <li class="ultimate-shop">
+          <a href="/html/eliminarCuenta.html">
+            <i class="fa-solid fa-trash"></i>
+            Eliminar Cuenta
+          </a>
+        </li>
       </ul>
     </div>
     <div class="cont-tabs">
       <h2>Información de tu cuenta</h2>
-      <form class="form">
+      <form class="form" id="form">
         <fieldset>
           <label for="profile-name">Nombre(s)</label>
-          <input type="text" id="profile-name" minlength="3" maxlength="25" readonly>
+          <input type="text" id="profile-name" minlength="3" maxlength="25" name="name">
         </fieldset>
         <fieldset>
           <label for="profile-surname">Apellido(s)</label>
-          <input type="text" id="profile-surname" minlength="3" maxlength="25" readonly>
+          <input type="text" id="profile-surname" minlength="3" maxlength="25" name="lastname">
         </fieldset>
         <fieldset>
           <label for="profile-email">Correo Electronico</label>
-          <input type="email" id="profile-email" readonly>
+          <input type="email" id="profile-email" name="email">
         </fieldset>
         <fieldset>
           <label for="profile-phone">Celular</label>
-          <input type="text" name="phone" id="profile-phone" readonly>
+          <input type="text" name="phone" id="profile-phone" name="phone">
         </fieldset>
         <fieldset>
           <label for="profile-id">Numero de identificación</label>
-          <input id="profile-id" type="text" minlength="3" readonly>
+          <input id="profile-id" type="text" minlength="3" disabled="disabled">
         </fieldset>
         <fieldset>
           <small>Género</small>
           <label class="gender">
-            <input type="radio" name="gender" id="male" readonly>
+            <input type="radio" name="gender" id="male">
             Hombre
           </label>
           <label class="gender">
-            <input type="radio" name="gender" id="female" readonly>
+            <input type="radio" name="gender" id="female">
             Mujer
           </label>
         </fieldset>
         <fieldset>
-          <a class="btn" href="#">Guardar Cambios</a>
+          <a class="btn" href="#" id="save">Guardar Cambios</a>
         </fieldset>
       </form>
     </div>
@@ -212,6 +218,7 @@
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="../js/script.js"></script>
   <script src="/js/profile.js"></script>
+  <script src="/js/modificarUsuario.js"></script>
 </body>
 
 </html>
