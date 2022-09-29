@@ -2,8 +2,6 @@ const modificar = document.getElementById('save');
 const id2 = localStorage.getItem('id');
 const formulario = document.getElementById('form');
 
-var patch = new FormData(formulario);
-
 modificar.addEventListener('click', (e) => {
 
   e.preventDefault();
@@ -19,6 +17,8 @@ modificar.addEventListener('click', (e) => {
     confirmButtonText: 'Si, modificar'
   }).then((result) => {
     if (result.isConfirmed) {
+
+      var patch = new FormData(formulario);
       const options = {
         method: 'PATCH',
         url: `https://neighbodfood.azurewebsites.net/api/cliente/${id2}`,
