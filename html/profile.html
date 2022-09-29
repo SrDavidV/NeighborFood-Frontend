@@ -122,7 +122,7 @@
         </figure>
         <div class="caption-data">
           <h1 class="caption-profile">Mi perfil</h1>
-          <span class="name">Sergio Esteban</span>
+          <span class="name" id="name"></span>
         </div>
       </div>
       <ul class="menu">
@@ -163,36 +163,32 @@
       <form class="form">
         <fieldset>
           <label for="profile-name">Nombre(s)</label>
-          <input type="text" id="profile-name" minlength="3" maxlength="25">
+          <input type="text" id="profile-name" minlength="3" maxlength="25" readonly>
         </fieldset>
         <fieldset>
           <label for="profile-surname">Apellido(s)</label>
-          <input type="text" id="profile-surname" minlength="3" maxlength="25">
+          <input type="text" id="profile-surname" minlength="3" maxlength="25" readonly>
         </fieldset>
         <fieldset>
           <label for="profile-email">Correo Electronico</label>
-          <input type="email" id="profile-email">
+          <input type="email" id="profile-email" readonly>
         </fieldset>
         <fieldset>
           <label for="profile-phone">Celular</label>
-          <input type="number" name="phone" id="profile-phone">
+          <input type="text" name="phone" id="profile-phone" readonly>
         </fieldset>
         <fieldset>
           <label for="profile-id">Numero de identificación</label>
-          <input id="profile-id" type="text" minlength="3">
-        </fieldset>
-        <fieldset>
-          <label for="profile-birth">Fecha de Nacimiento</label>
-          <input id="profile-birth" type="date">
+          <input id="profile-id" type="text" minlength="3" readonly>
         </fieldset>
         <fieldset>
           <small>Género</small>
           <label class="gender">
-            <input type="radio" name="gender">
+            <input type="radio" name="gender" id="male" readonly>
             Hombre
           </label>
           <label class="gender">
-            <input type="radio" name="gender">
+            <input type="radio" name="gender" id="female" readonly>
             Mujer
           </label>
         </fieldset>
@@ -212,7 +208,10 @@
   <!-- Icons -->
   <script src="https://kit.fontawesome.com/36c7cc7f6f.js" crossorigin="anonymous"></script>
   <!-- My Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="../js/script.js"></script>
+  <script src="/js/profile.js"></script>
 </body>
 
 </html>

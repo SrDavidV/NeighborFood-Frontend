@@ -3,7 +3,7 @@ console.log("nuevo cliente");
 
 function redireccionar(time) {
     setTimeout(function () {
-        window.location.href = '/../html/profile.html';
+        window.location.href = '/../html/correoLogin.html';
     }, time);
 }
 
@@ -76,12 +76,13 @@ inicio.addEventListener('submit', function (e) {
                 console.log(errores)
                 errores.forEach(item => {
                     var mensaje = item;
-                    if (mensaje = "The JSON value could not be converted to System.Int64. Path: $.pK_Cedula | LineNumber: 0 | BytePositionInLine: 25.") {
+                    if (mensaje == "The JSON value could not be converted to System.Int64. Path: $.pK_Cedula | LineNumber: 0 | BytePositionInLine: 25.") {
                         mensaje = "Ingrese un documento con un formato correcto ejemplo: 101915487";
                     }
                     Swal.fire({
                         icon: 'error',
                         title: mensaje,
+                        confirmButtonColor: '#283618',
                     })
                 });
 

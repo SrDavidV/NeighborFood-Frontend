@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/register.css" />
     <link rel="stylesheet" href="../css/email-login.css">
+    <link rel="stylesheet" href="/assets/plugins/waitMe.min.css">
     <title>NeighborFood</title>
 </head>
 
@@ -47,10 +48,10 @@
             </div>
             <div class="login-form">
                 <h1 class="login-form__title">Iniciar Con Correo</h1>
-                <form class="login-form__inputs">
-                    <input class="ingresos" type="text" name="email">
+                <form class="login-form__inputs" id="login__form">
+                    <input class="ingresos" type="text" name="email" required>
                     <label>Correo Electronico</label>
-                    <input class="ingresos" type="password" name="password">
+                    <input class="ingresos" type="password" name="password" required>
                     <label>Contraseña</label>
                     <button class="iniciar">Ingresar</button>
                 </form>
@@ -75,7 +76,12 @@
 
 
         <!-- Icons -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="https://kit.fontawesome.com/36c7cc7f6f.js" crossorigin="anonymous"></script>
+        <script src="/js/login.js"></script>
+        <script src="/assets/plugins/waitMe.min.js"></script>
 
 
 </body>
