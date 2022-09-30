@@ -1,6 +1,7 @@
 main {
     display: flex;
-    height: 77vh;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     gap: 140px;
 }
@@ -13,7 +14,7 @@ main {
 
 .login-form {
     min-width: 470px;
-    height: 93%;
+    height: 70vh;
     background-color: #FFFFFF;
     border-radius: 45px;
     box-shadow: 8px 3px 12px 0px rgba(0, 0, 0, 0.70);
