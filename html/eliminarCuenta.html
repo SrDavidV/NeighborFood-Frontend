@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/register.css" />
+  <link rel="stylesheet" href="/css/delete.css">
+  <link rel="stylesheet" href="/assets/plugins/waitMe.min.css">
+
+  <!-- Icons -->
+  <link rel="icon" href="assets/img/icon.webp" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet" />
+  <title>Eliminar</title>
+</head>
+
+<body>
+
+  <header>
+    <header class="header">
+      <div class="back">
+        <a href="./profile.html">
+          <i class="fa-solid fa-caret-left"></i>
+          <span class="back__text">Volver</span>
+        </a>
+      </div>
+      <a href="../index.html" class="logo">
+        <picture class="logo">
+          <source media="(min-width: 768px)" srcset="../assets/img/logo/logo-nf-completo.webp" />
+          <source srcset="../assets/img/logo/logo-nf-small.webp" />
+          <img src="../assets/img/logo/logo-nf-small.webp" alt="Logo NeighborFood" />
+        </picture>
+      </a>
+    </header>
+    <main>
+      <h1 class="warning__message">ZONA DE PELIGRO<i class="fa-solid fa-triangle-exclamation fa-2xl"></i></h1>
+      <p class="warning__paragraph">Esta a punto de desactivar su cuenta, este proceso es irreversible y perdera el
+        acceso a nuestros servicios</p>
+
+      <button class="btn" id="primero">Continuar</button>
+      <button class="btn"><a href="/index.html">Volver al inicio</a></button>
+
+    </main>
+
+
+    <footer class="footer">
+      <div class="footer__group-two">
+        <small>&copy; 2022 <b>NeighborFood</b> - Todos los derechos
+          reservados</small>
+      </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/36c7cc7f6f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/assets/plugins/waitMe.min.js"></script>
+    <script src="/js/eliminarCliente.js"></script>
+</body>
+
+</html>

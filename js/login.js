@@ -19,6 +19,7 @@ boton.addEventListener('click', (e) => {
 
   e.preventDefault();
   var datos = new FormData(formulario);
+  var password = datos.get('password');
 
   if (datos.get('email') == "") {
     Swal.fire({
@@ -54,6 +55,7 @@ boton.addEventListener('click', (e) => {
       let cedula = data.pK_Cedula;
 
       localStorage.setItem("id", cedula);
+      localStorage.setItem("pass", password);
     }
 
 
@@ -67,6 +69,12 @@ boton.addEventListener('click', (e) => {
       })
 
 
+    } else if (error.response.status == 400 && error.response.data[0] == 'Usuario inactivo') {
+      Swal.fire({
+        icon: 'error',
+        title: 'Usuario inactivo',
+        confirmButtonColor: '#283618',
+      })
     } else if (error.response.status == 400) {
       Swal.fire({
         icon: 'error',
