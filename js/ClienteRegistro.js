@@ -14,6 +14,8 @@ inicio.addEventListener('submit', function (e) {
     e.preventDefault();
     console.log('Me diste un click');
     var datos = new FormData(inicio);
+    let id = document.getElementById('num_document').value;
+    onlynumbers = /^[0-9]/
 
     const options = {
         method: 'POST',
@@ -34,7 +36,14 @@ inicio.addEventListener('submit', function (e) {
     let pass2 = document.getElementById('confirm-password').value;
     const check = document.getElementById('terms-yes').checked;
 
-
+    if (!onlynumbers.test(id)) {
+        Swal.fire({
+            icon: 'error',
+            title: "El número de documento solo permite números",
+            confirmButtonColor: '#283618',
+        })
+        return false;
+    }
     if (pass1 == "" || pass2 == "") {
         Swal.fire({
             icon: 'error',
@@ -67,8 +76,6 @@ inicio.addEventListener('submit', function (e) {
 
                     redireccionar(2000);
 
-                } else if (response.status == 400) {
-                    console.log('usuario no nuevo')
                 }
 
             }).catch(function (error) {
@@ -85,6 +92,7 @@ inicio.addEventListener('submit', function (e) {
                         confirmButtonColor: '#283618',
                     })
                 });
+
 
             });
         }
